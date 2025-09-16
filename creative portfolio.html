@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Video Editor Portfolio&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Load Tailwind CSS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Define custom colors and fonts using Tailwind's JIT mode */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--milker-font: 'Milker', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--poppins-font: 'Poppins', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@tailwind base;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@tailwind components;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@tailwind utilities;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/*</p>
+<p class="p1"><span class="Apple-converted-space">            </span>NOTE: For the 'Milker' font, you will need to host the font files (.woff2, .woff)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>on your server and update the `src` URLs below.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Example: url('/path/to/milker.woff2') format('woff2');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>*/</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@font-face {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Milker';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-style: normal;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 400;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>src: local('Milker'), url('https://your-font-hosting-url/milker.woff2') format('woff2'); /* REPLACE THIS URL */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>html {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Poppins', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #1a1a1a;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #d4d4d4;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.milker-font {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Milker', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.no-scrollbar::-webkit-scrollbar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.no-scrollbar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-ms-overflow-style: none; /* IE and Edge */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scrollbar-width: none; /* Firefox */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Custom class for 9:16 aspect ratio */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.aspect-ratio-9-16 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 177.77%; /* (16 / 9) * 100% */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.aspect-ratio-9-16 video {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body class="bg-gray-900 text-gray-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto p-4 md:p-8 space-y-24"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Header/Profile Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;header class="text-center pt-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Profile Picture --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/150x150/5e17eb/F9A602?text=Your+Photo" alt="Profile" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#F9A602] shadow-xl transition-transform duration-300 hover:scale-105"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="milker-font text-4xl md:text-6xl text-[#F9A602] mt-6"&gt;Your Name&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="poppins-font text-lg md:text-xl font-light text-[#d4d4d4]"&gt;Short-Form Video Editor&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Main Content Area --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;main class="space-y-24"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Help Statement Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section class="max-w-3xl mx-auto text-center px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="milker-font text-3xl md:text-4xl text-[#F9A602] mb-4"&gt;I help you tell your story.&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-base md:text-lg font-light leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>I am a passionate video editor specializing in creating captivating short-form content that grabs attention and drives engagement. Whether for social media, ads, or personal projects, I craft visually stunning videos that leave a lasting impact.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Video Portfolio Section (Social Media Scroll) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section class="max-w-md mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="milker-font text-center text-3xl md:text-4xl text-[#F9A602] mb-8"&gt;My Best Videos&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="video-feed" class="w-full h-[600px] overflow-y-scroll no-scrollbar snap-y snap-mandatory bg-gray-800 rounded-3xl shadow-2xl border-4 border-[#5e17eb]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Video Item 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="video-item snap-center w-full h-full flex flex-col justify-center items-center p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-ratio-9-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;video class="object-cover rounded-2xl" loop muted playsinline&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;source src="https://your-video-url/video1.mp4" type="video/mp4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Your browser does not support the video tag.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-center mt-2 font-light"&gt;Project 1: Engaging TikTok Ad&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Video Item 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="video-item snap-center w-full h-full flex flex-col justify-center items-center p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-ratio-9-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;video class="object-cover rounded-2xl" loop muted playsinline&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;source src="https://your-video-url/video2.mp4" type="video/mp4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Your browser does not support the video tag.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-center mt-2 font-light"&gt;Project 2: Brand Story Reel&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Video Item 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="video-item snap-center w-full h-full flex flex-col justify-center items-center p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-ratio-9-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;video class="object-cover rounded-2xl" loop muted playsinline&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;source src="https://your-video-url/video3.mp4" type="video/mp4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Your browser does not support the video tag.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-center mt-2 font-light"&gt;Project 3: YouTube Shorts Explainer&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Video Item 4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="video-item snap-center w-full h-full flex flex-col justify-center items-center p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-ratio-9-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;video class="object-cover rounded-2xl" loop muted playsinline&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;source src="https://your-video-url/video4.mp4" type="video/mp4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Your browser does not support the video tag.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-center mt-2 font-light"&gt;Project 4: Instagram Product Demo&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Video Item 5 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="video-item snap-center w-full h-full flex flex-col justify-center items-center p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-ratio-9-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;video class="object-cover rounded-2xl" loop muted playsinline&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;source src="https://your-video-url/video5.mp4" type="video/mp4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Your browser does not support the video tag.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-center mt-2 font-light"&gt;Project 5: Behind-the-Scenes Clip&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Video Item 6 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="video-item snap-center w-full h-full flex flex-col justify-center items-center p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-ratio-9-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;video class="object-cover rounded-2xl" loop muted playsinline&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;source src="https://your-video-url/video6.mp4" type="video/mp4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Your browser does not support the video tag.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-center mt-2 font-light"&gt;Project 6: Event Highlight Reel&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-center text-sm mt-4 text-gray-500"&gt;Scroll up to see the next video&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Testimonials Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section class="max-w-4xl mx-auto px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="milker-font text-center text-3xl md:text-4xl text-[#F9A602] mb-8"&gt;What Clients Say&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Testimonial 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-[#5e17eb] transition-transform duration-300 hover:scale-105"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-lg italic leading-relaxed text-[#d4d4d4]"&gt;"The final video was beyond our expectations! The attention to detail and quick turnaround time were incredible. We'll definitely be working with you again."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-right text-sm font-semibold mt-4 text-[#F9A602]"&gt;- Jane Doe, CEO of Example Inc.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Testimonial 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-[#5e17eb] transition-transform duration-300 hover:scale-105"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-lg italic leading-relaxed text-[#d4d4d4]"&gt;"They have a true understanding of social media trends. The video they created for us went viral almost instantly!"&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-right text-sm font-semibold mt-4 text-[#F9A602]"&gt;- John Smith, Marketing Manager&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Footer/Contact Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;footer class="text-center pb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="milker-font text-3xl md:text-4xl text-[#F9A602] mb-4"&gt;Let's Create Something Amazing&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-base md:text-lg font-light mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Ready to elevate your content? Book a free consultation to discuss your vision.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="https://calendly.com/your-username" target="_blank" class="milker-font inline-block px-10 py-4 bg-[#F9A602] text-gray-900 rounded-full shadow-2xl text-lg font-bold uppercase transition-all duration-300 hover:bg-[#d4d4d4] hover:text-black hover:scale-105"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Book a Call</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-center space-x-6 mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Social media icons - replace with actual links --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="text-[#d4d4d4] hover:text-[#5e17eb] transition-colors duration-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M12 2C6.477 2 2 6.477 2 12c0 4.075 2.502 7.55 6.014 9.074.44.081.602-.191.602-.423 0-.21-.008-.76-.012-1.496-2.43.527-2.946-1.171-2.946-1.171-.397-1.01-.967-1.278-.967-1.278-.795-.544.06-.534.06-.534.88.062 1.343.896 1.343.896.78 1.336 2.046.95 2.545.727.08-.564.305-.95.557-1.168-1.936-.22-3.974-.968-3.974-4.306 0-.95.34-1.727.896-2.333-.09-.22-.387-1.096.086-2.28 0 0 .73-.228 2.39.87.696-.194 1.439-.29 2.18-.29.742 0 1.485.096 2.18.29 1.66-1.098 2.39-.87 2.39-.87.473 1.184.18 2.06.09 2.28.557.606.896 1.383.896 2.333 0 3.348-2.04 4.084-3.98 4.303.313.27.59.81.59 1.636 0 1.18-.01 2.127-.01 2.417 0 .232.162.508.604.425C19.498 19.55 22 16.075 22 12c0-5.523-4.477-10-10-10z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="text-[#d4d4d4] hover:text-[#5e17eb] transition-colors duration-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.178 7.373c.094.04.143.082.164.126l.164.36c.106.315.174.654.202 1.015.028.36.035.73.02 1.1-.014.37-.052.735-.113 1.09-.062.355-.15.702-.26 1.03-.108.328-.242.64-.402.94-.16.3-.35.58-.564.845-.213.265-.45.51-.71.73-.258.22-.533.42-.82.597-.286.176-.59.324-.908.44-.318.117-.65.207-1.002.268-.352.06-.713.08-1.085.068-.37-.012-.738-.052-1.1-.11-.363-.06-.715-.15-1.06-.27-.34-.12-.67-.28-.99-.48-.32-.2-.62-.43-.9-.69-.27-.26-.53-.54-.76-.85-.23-.31-.44-.64-.62-.99-.18-.35-.33-.72-.45-1.1-.12-.38-.21-.77-.27-1.18-.06-.41-.07-.82-.03-1.23.04-.41.13-.81.26-1.2.13-.39.29-.77.49-1.13.2-.36.44-.7.71-.99.27-.29.58-.55.9-.78.32-.23.66-.43 1.02-.6.36-.17.74-.29 1.13-.37.39-.08.79-.12 1.2-.12.41 0 .82.04 1.22.12.4.08.78.2.14.36l.24.47c-.033-.014-.075-.027-.126-.038-.05-.01-.1-.017-.152-.02-.153-.01-.31-.02-.468-.02-.497 0-.964.1-1.408.3-.443.2-.84.47-1.19.82-.35.35-.61.76-.79 1.23-.17.47-.26.98-.26 1.54 0 .56.09 1.07.26 1.54.18.47.44.88.79 1.23.35.35.74.62 1.19.82.44.2.91.3 1.41.3.5 0 .97-.1 1.41-.3.44-.2.83-.47 1.18-.82.35-.35.61-.76.79-1.23.17-.47.26-.98.26-1.54 0-.4-.05-.8-.15-1.19-.1-.39-.24-.76-.43-1.11z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mt-8 text-gray-500"&gt;© 2024 Your Name. All Rights Reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Placeholder for smooth scrolling functionality, if needed.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// The snap-y classes handle most of the social media-style scroll feel.</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Intersection Observer to play videos on scroll</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const videoItems = document.querySelectorAll('.video-item');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const options = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>root: document.getElementById('video-feed'),</p>
+<p class="p1"><span class="Apple-converted-space">            </span>rootMargin: '0px',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>threshold: 0.8 // Play video when 80% of it is visible</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const observer = new IntersectionObserver((entries, observer) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const video = entry.target.querySelector('video');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (entry.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>video.play();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>video.pause();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, options);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>videoItems.forEach(item =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>observer.observe(item);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
